@@ -59,7 +59,7 @@ textarea::-webkit-scrollbar {
   color: #4070f4;
 }
 .container .todoLists {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .todoLists .list {
   display: flex;
@@ -72,13 +72,16 @@ textarea::-webkit-scrollbar {
   cursor: pointer;
 }
 .todoLists .list input {
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   accent-color: #4070f4;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 .todoLists .list .task {
   margin: 0 30px 0 15px;
+}
+.list input:checked ~ .task {
+  text-decoration: line-through;
 }
 .todoLists .list i {
   position: absolute;
@@ -96,4 +99,26 @@ textarea::-webkit-scrollbar {
 }
 .todoLists .list i:hover {
   opacity: 1;
+}
+.container .pending-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.pending-task span {
+  color: #333;
+}
+.pending-task .clear-button {
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  background-color: #4070f4;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.clear-button:hover {
+  background-color: #0e4bf1;
 }
