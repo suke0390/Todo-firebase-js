@@ -7,12 +7,69 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <title>Firebase-Todo-List</title>
   </head>
   <body>
-    
+    <h1 class="title">Stuff I need To do</h1>
+
+    <div class="all_tasks">
+      <h2 class="task_list_title">My lists</h2>
+      <ul class="task_list">
+        <li class="active-list">Youtube</li>
+        <li>Work</li>
+        <li>Lessons</li>
+      </ul>
+
+      <form action="">
+        <input
+          type="text"
+          class="new list"
+          placeholder="new list name"
+          aria-label="new list name"
+        />
+        <button class="btn list" aria-label="create new list">+</button>
+      </form>
+    </div>
+
+    <div class="tod_list">
+      <div class="todo_header">
+        <h2 class="list_title">Youtube</h2>
+        <p class="task_count">3 tasks remaning</p>
+      </div>
+
+      <div class="todo_body">
+        <div class="tasks">
+          <div class="task">
+            <input type="checkbox" id="task_1" />
+            <label for="task_1">
+              <span class="circle_chekbox"></span>
+              record todo list video</label
+            >
+          </div>
+        </div>
+
+        <div class="new_task_creator">
+          <form action="">
+            <input
+              type="text"
+              class="new task"
+              placeholder="new task name"
+              aria-label="new task name"
+            />
+            <button class="btn task" aria-label="create new task">+</button>
+          </form>
+        </div>
+
+        <div class="delete_stuff">
+          <button class="btn delete">Clear completed tasks</button>
+          <button class="btn delete">Delete list</button>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
